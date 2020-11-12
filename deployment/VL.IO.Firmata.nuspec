@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.IO.Firmata</id>
+    <version>0.0.1-alpha</version>
+    <title>VL.IO.Firmata</title>
+    <authors>vvvv</authors>
+    <owners>vvvv</owners>
+    <projectUrl>https://github.com/vvvv/VL.IO.Firmata</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Provides support for the Firmata protocol in VL</summary>
+    <description>Provides support for the Firmata protocol in VL. Try it with vvvv: http://visualprogramming.net</description>
+    <tags>VL, arduino</tags>
+	<license type="expression">LGPL-3.0-only</license>
+	<icon>icon\nugeticon.png</icon>
+  </metadata>
+  <files>
+    <file src="..\*.vl" target="" exclude="" />
+	<file src="..\vvvv\**" target="vvvv\" exclude="" />
+	<file src="..\help\**" target="help\" exclude="" />
+	<file src="nugeticon.png" target="icon\" />
+  </files>
+</package>
