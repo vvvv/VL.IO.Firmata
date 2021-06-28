@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="VP7aKTwG3SbLh5H5AzSmkc" Summary="Nodes for the firmata protocol: http://www.firmata.org" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl-3.0-standalone.html" ProjectUrl="https://vvvv.org/" LanguageVersion="2021.4.0.57" Version="0.128">
-  <NugetDependency Id="SyLg1leWn5LMYdlUkN6cno" Location="VL.CoreLib" Version="2021.4.0-0057-g995f75c7bc" />
+<Document xmlns:p="property" Id="Bg3ulKCnVpeP8herKgVffn" Summary="Nodes for the firmata protocol: http://www.firmata.org" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl-3.0-standalone.html" ProjectUrl="https://vvvv.org/" LanguageVersion="2021.4.0.172" Version="0.128">
+  <NugetDependency Id="SyLg1leWn5LMYdlUkN6cno" Location="VL.CoreLib" Version="2021.4.0-0127-gccb203efe5" />
   <Patch Id="GG4i7F7FrIBLr9Y4Ph30kE">
     <Canvas Id="JKiXGuoc5rdNvMf7U7yaDg" DefaultCategory="IO.Firmata" CanvasType="FullCategory">
       <Canvas Id="IaEK8jfuIMYMm052wK6OiG" Name="PinGetters" Position="419,425" DefaultCategory="IO.Firmata" CanvasType="Group">
@@ -11901,13 +11901,13 @@
               <Link Id="DiqgMRibSP1NGUxSosVdMX" Ids="B6lp71abkFcOiR6kqWqlsb,GvEm2sntNdJL9sn1c6BrtO" />
               <ControlPoint Id="B6lp71abkFcOiR6kqWqlsb" Bounds="493,549" />
               <Link Id="LDDQio57BQwOBuZiitZtrD" Ids="RkZC9Y8NEPCOcTGZ7PwlLP,B6lp71abkFcOiR6kqWqlsb" IsHidden="true" />
+              <Link Id="SH68LaQzf5QN6I9gpxwIdH" Ids="JwhSylAiOycMuksH9kR9Cd,S5Wdpyxa1sSNhNuDx0KX5n" IsHidden="true" />
+              <Link Id="GmQsGQ17r4NLiepZkdrb1e" Ids="QEOgKDy3uUvOusvo2pWns2,JwhSylAiOycMuksH9kR9Cd" />
               <Pin Id="OeoF1kEPpCgNEro154mHyW" Name="Register" Kind="OutputPin" />
               <Pin Id="CCu9u26gitBNHtc5S5pcq7" Name="Data" Kind="OutputPin" />
               <Pin Id="KT0KVPLDuGiM1NUNjSZHe2" Name="Input" Kind="InputPin" Bounds="61,368" />
               <Pin Id="RTLw7kpingyPm7sTOZmXeZ" Name="Debug" Kind="OutputPin" />
               <Pin Id="RkZC9Y8NEPCOcTGZ7PwlLP" Name="Address" Kind="InputPin" Bounds="540,614" />
-              <Link Id="SH68LaQzf5QN6I9gpxwIdH" Ids="JwhSylAiOycMuksH9kR9Cd,S5Wdpyxa1sSNhNuDx0KX5n" IsHidden="true" />
-              <Link Id="GmQsGQ17r4NLiepZkdrb1e" Ids="QEOgKDy3uUvOusvo2pWns2,JwhSylAiOycMuksH9kR9Cd" />
             </Patch>
           </Node>
         </Canvas>
@@ -13459,7 +13459,7 @@
               <Pin Id="HdmO333naLkMuLYPgzPsY7" Name="Reset" Kind="InputPin" />
               <Pin Id="HK2vwuPDQWjPGGJGwV4xVZ" Name="Result" Kind="OutputPin" />
               <Patch Id="IP7wK4zmCkDO6fOkPc7HeD" ManuallySortedPins="true">
-                <Patch Id="LKEQDXcdtDhMvJq2qnk5J0" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="LKEQDXcdtDhMvJq2qnk5J0" Name="Create" ParticipatingElements="IZ7yvCPVBSbOztNLe1FOSZ" ManuallySortedPins="true" />
                 <Patch Id="HFyCF6yyMCMLhdoLBiaCYp" Name="Update" ParticipatingElements="B46eE2zZhMzMSd2d8JeZXL,Jp6meAjKSnmM1pxUKccx9p,QxKkUBRDVInMDWW1uStxu2" ManuallySortedPins="true">
                   <Pin Id="VLhmiKg0z9WLicqMAHzmeY" Name="Input 1" Kind="InputPin" />
                   <Pin Id="IpL5QvwBFO8QBzXTN1MZJl" Name="Output 1" Kind="OutputPin" />
@@ -13504,6 +13504,14 @@
                 </Node>
                 <Slot Id="UvVQgmbQBofNynjG3asgiE" Name="Config" />
                 <Pad Id="Qwuji4KgeJAQXjnCDudbOq" SlotId="UvVQgmbQBofNynjG3asgiE" Bounds="484,524" />
+                <Node Bounds="481,470,67,26" Id="IZ7yvCPVBSbOztNLe1FOSZ">
+                  <p:NodeReference LastCategoryFullName="IO.Firmata.FirmataConfig" LastSymbolSource="VL.IO.Firmata.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="RecordType" Name="FirmataConfig" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="LcmPnB8RsuWLorLIQCSAls" Name="Output" Kind="StateOutputPin" />
+                </Node>
               </Patch>
             </Node>
             <Node Bounds="848,198,16,19" Id="BbTJ2b2GIJwPoD67hv0GtJ">
@@ -13660,6 +13668,7 @@
           <Link Id="MRs5ya3st9BPU5f5e1TaNQ" Ids="HGduBnvJjfqNJCPia6QKVF,VAIfbSokTTJLJq77l1JjiJ" />
           <Link Id="DCXhSYf4tzJNhHM5ugvVK1" Ids="AYbr5Ose2fbOdn3VhJjU1v,QAs67QUkaACPXZmyHEti3L" />
           <Link Id="SxS99r80NOyNr1fATpztHd" Ids="LPaUl4F2St6LgBsueaIIzV,QMRj8xXW562PnbQxyxfS2D" />
+          <Link Id="S8PDirDW2aJN5jpsNZG1fq" Ids="LcmPnB8RsuWLorLIQCSAls,Qwuji4KgeJAQXjnCDudbOq" />
         </Patch>
       </Node>
       <Canvas Id="FurkAks8C1IMMDRTCPyTMa" Name="Advanced" Position="419,553">
