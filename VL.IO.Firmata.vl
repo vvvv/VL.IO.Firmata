@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="VP7aKTwG3SbLh5H5AzSmkc" Summary="Nodes for the firmata protocol: http://www.firmata.org" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl-3.0-standalone.html" ProjectUrl="https://vvvv.org/" LanguageVersion="2021.4.5.764" Version="0.128">
-  <NugetDependency Id="SyLg1leWn5LMYdlUkN6cno" Location="VL.CoreLib" Version="2021.4.5" />
+<Document xmlns:p="property" Id="VP7aKTwG3SbLh5H5AzSmkc" Summary="Nodes for the firmata protocol: http://www.firmata.org" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl-3.0-standalone.html" ProjectUrl="https://vvvv.org/" LanguageVersion="2021.4.10.1038" Version="0.128">
+  <NugetDependency Id="SyLg1leWn5LMYdlUkN6cno" Location="VL.CoreLib" Version="2021.4.10-1021-g8bbd4c6f55" />
   <Patch Id="GG4i7F7FrIBLr9Y4Ph30kE">
     <Canvas Id="JKiXGuoc5rdNvMf7U7yaDg" DefaultCategory="IO.Firmata" CanvasType="FullCategory">
       <Canvas Id="IaEK8jfuIMYMm052wK6OiG" Name="PinGetters" Position="419,425" DefaultCategory="IO.Firmata" CanvasType="Group">
@@ -3754,9 +3754,10 @@
                   <CategoryReference Kind="Category" Name="IO" />
                 </p:NodeReference>
                 <Pin Id="QZqPxtqDbNIPYiuOIFYr0x" Name="Data" Kind="InputPin" />
-                <Pin Id="QyJfu2y8jJIQG2gN9ZXJqK" Name="Reset" Kind="InputPin" />
                 <Pin Id="Fd73ujr6bq3L1Ohfsz8tkR" Name="Tokenize" Kind="InputPin" />
+                <Pin Id="QyJfu2y8jJIQG2gN9ZXJqK" Name="Reset" Kind="InputPin" />
                 <Pin Id="Th5tmtag9ePOtPmUchqmcR" Name="Result" Kind="OutputPin" />
+                <Pin Id="RJQZFPosyvfL4sKpiS7eFw" Name="Buffer Size" Kind="OutputPin" />
                 <Pin Id="G3j0KkJ6Td6QCNxcne614S" Name="Status" Kind="OutputPin" />
               </Node>
               <Node Bounds="204,602,42,13" Id="Of0Kn2Kf102PRieallkw9y">
@@ -9193,6 +9194,7 @@
                   <Pin Id="StnQ5g2GK4aNVkkLbKuNcc" Name="Postfix" Kind="InputPin" />
                   <Pin Id="BL7mUdFMR0iQZCogPyZWRQ" Name="Reset" Kind="InputPin" />
                   <Pin Id="DeYEpw9WmiWLvAthMTyA5P" Name="Result" Kind="OutputPin" />
+                  <Pin Id="RRE0H3VfEY2PNDscFsiapu" Name="Buffer Size" Kind="OutputPin" />
                   <Pin Id="UEkFInbcmNbMm6lmwEipHV" Name="Status" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="557,374,72,19" Id="DG04r0TUukPNWBFzVnaf8i">
@@ -13532,12 +13534,12 @@
             </Pin>
             <Pin Id="J94FpiJyw51NgxJHPmtaXp" Name="Port Name" Kind="InputPin" />
             <Pin Id="TGPNO2IRRLmOPSl7JhM3ly" Name="Reset" Kind="InputPin" />
-            <Pin Id="RB2UMKeGmd3OeEEAGHnnXj" Name="Enabled" Kind="InputPin" />
-            <Pin Id="LUoskCBmfApQAGpIcD5DZo" Name="Dtr Enable" Kind="InputPin" DefaultValue="True">
+            <Pin Id="LUoskCBmfApQAGpIcD5DZo" Name="Dtr Enable" Kind="InputPin" DefaultValue="True" Visibility="Optional">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="RB2UMKeGmd3OeEEAGHnnXj" Name="Enabled" Kind="InputPin" />
             <Pin Id="L1qytPYeDNsN6tkWSHVUPT" Name="Pin States" Kind="OutputPin" />
             <Pin Id="RTYaH0mwHlaNl1RdiTu2Mz" Name="Sysex Messages" Kind="OutputPin" />
             <Pin Id="FZoN482fhNvNzvgAAndXxv" Name="Firmware Version" Kind="OutputPin" />
