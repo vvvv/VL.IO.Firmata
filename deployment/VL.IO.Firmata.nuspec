@@ -7,9 +7,10 @@
     <authors>vvvv</authors>
     <owners>vvvv</owners>
     <projectUrl>https://github.com/vvvv/VL.IO.Firmata</projectUrl>
+    <repository type="git" url="https://github.com/vvvv/VL.IO.Firmata.git" />
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Provides support for the Firmata protocol in VL</summary>
-    <description>Provides support for the Firmata protocol in VL. Try it with vvvv: http://visualprogramming.net</description>
+    <description>Provides support for the Firmata protocol to read data from and write to pins of e.g. Arduino boards</description>
     <tags>VL, arduino</tags>
 	<license type="expression">LGPL-3.0-only</license>
 	<icon>icon\nugeticon.png</icon>
