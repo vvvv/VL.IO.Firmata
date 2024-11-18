@@ -505,21 +505,12 @@
       </p:NodeReference>
       <Patch Id="Q4KYAHzeVz3LnA4p7z4zB8">
         <Canvas Id="ThsLeEisveJPcXWHjJ9H0Z" CanvasType="Group">
-          <Pad Id="NQ7QZE2m9q0OzP3os8UmEm" Bounds="55,364,405,64" ShowValueBox="true" isIOBox="true" Value="In your document check the dependency to VL.IO.Firmata:&#xD;&#xA;Go to the Document menu &gt; Dependencies &gt; VL Nugets.&#xD;&#xA;Rightclick on VL.IO.Firmata if the checkbox is not lit.">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="Nj8RHhBoNIxLUA9R8edbNV" Comment="Enabled" Bounds="999,556,49,49" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Nj8RHhBoNIxLUA9R8edbNV" Comment="Enabled" Bounds="990,596,49,49" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="J2MQ6bhi8iAOAm91S4YMqm" Comment="Firmata Ready" Bounds="927,668,40,19" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="J2MQ6bhi8iAOAm91S4YMqm" Comment="Firmata Ready" Bounds="907,666,40,19" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="650,418,105,19" Id="VJDMWaWIyI1LAunoMF3nFl">
             <p:NodeReference LastCategoryFullName="IO.Firmata.I2C" LastDependency="VL.IO.Firmata.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -552,7 +543,7 @@
             <Pin Id="LUP9AJZfiwlPSlGeAgdxBQ" Name="Do Read" Kind="InputPin" />
             <Pin Id="FcbOgf2f6P5L0KXC5JmvbV" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="QTRunoQGUm0MHBQVjul7im" Bounds="55,452,409,65" ShowValueBox="true" isIOBox="true" Value="I2CWriteEncoder and I2CReadEncoder are now Experimental.&#xD;&#xA;To see them in the NodeBrowser, enable the Experimental Switch (rightmost dot).">
+          <Pad Id="QTRunoQGUm0MHBQVjul7im" Bounds="55,377,409,65" ShowValueBox="true" isIOBox="true" Value="I2CWriteEncoder and I2CReadEncoder are Experimental.&#xD;&#xA;To see them in the NodeBrowser, enable the Experimental Switch.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -587,7 +578,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="E1fn7jJY8wAPnyuqDUiLPQ" Bounds="55,522,440,640" ShowValueBox="true" isIOBox="true" Value="First, enable the `Sysex Messages` pin: rightclick the FirmataDevice node, choose Configure &gt; Show Sysex Messages pin.&#xD;&#xA;&#xD;&#xA;Set the Com Port of your Microcontroller (loaded with Firmata Firmware) is connected to and right click the 'Enable' IOBox. &#xD;&#xA;&#xD;&#xA;53 is the hex Address of the ADXL345. Check the documentation of your I2C device about its Address and see the helppatches for I2CReadEncoder/I2CWriteEncoder nodes for more information about Address's peculiarities.&#xD;&#xA;&#xD;&#xA;The ADXL345 Sensor needs to be configured. In the most simple case only the POWER_CTL Register with hex Adress '2D' needs to be set to value 8 (Binary: 00001000). &#xD;&#xA;This is the 'Measure Bit'. Setting it to 1 places the sensor into measurement mode. Check the Datasheet for more info.&#xD;&#xA;&#xD;&#xA;Rightclick 'Do Send' of the I2CWriteEncoder.&#xD;&#xA;&#xD;&#xA;The I2CReadEncoder reads 6 bytes from the consecutive output registers, starting from the register with hex address 32. Each register contains 1 byte. 6 bytes are corresponding to the XX, YY, ZZ values. After sending the 6th byte the sensor jumps back to register 32 and starts from the beginning. See the helppatch for more details.&#xD;&#xA;&#xD;&#xA;Rightclick Read' of the I2CReadEncoder.&#xD;&#xA;&#xD;&#xA;I2CDecoder (Firmata) picks and decodes only I2C messages from the Device with the given address.&#xD;&#xA;&#xD;&#xA;ToInt16 converts every two bytes from a spread into one value, so 6 bytes are X, Y and Z values. Finally the X, Y and Z are multiplied with some constants.">
+          <Pad Id="E1fn7jJY8wAPnyuqDUiLPQ" Bounds="55,447,440,640" ShowValueBox="true" isIOBox="true" Value="First, enable the `Sysex Messages` pin: rightclick the FirmataDevice node, choose Configure &gt; Show Sysex Messages pin.&#xD;&#xA;&#xD;&#xA;Set the Com Port of your Microcontroller (loaded with Firmata Firmware) is connected to and right click the 'Enabled' IOBox. &#xD;&#xA;&#xD;&#xA;53 is the hex Address of the ADXL345. Check the documentation of your I2C device about its Address and see the helppatches for I2CReadEncoder/I2CWriteEncoder nodes for more information about Address's peculiarities.&#xD;&#xA;&#xD;&#xA;The ADXL345 Sensor needs to be configured. In the most simple case only the POWER_CTL Register with hex Adress '2D' needs to be set to value 8 (Binary: 00001000). &#xD;&#xA;This is the 'Measure Bit'. Setting it to 1 places the sensor into measurement mode. Check the Datasheet for more info.&#xD;&#xA;&#xD;&#xA;Rightclick 'Do Send' of the I2CWriteEncoder.&#xD;&#xA;&#xD;&#xA;The I2CReadEncoder reads 6 bytes from the consecutive output registers, starting from the register with hex address 32. Each register contains 1 byte. 6 bytes are corresponding to the XX, YY, ZZ values. After sending the 6th byte the sensor jumps back to register 32 and starts from the beginning. See the helppatch for more details.&#xD;&#xA;&#xD;&#xA;Rightclick Read' of the I2CReadEncoder.&#xD;&#xA;&#xD;&#xA;I2CDecoder (Firmata) picks and decodes only I2C messages from the Device with the given address.&#xD;&#xA;&#xD;&#xA;ToInt16 converts every two bytes from a spread into one value, so 6 bytes are X, Y and Z values. Finally the X, Y and Z are multiplied with some constants.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -700,7 +691,7 @@
               </p:TypeArguments>
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="ONxeG0qSEt7PTSsLgedR0R" Bounds="17,521,32,31" ShowValueBox="true" isIOBox="true" Value="1.">
+          <Pad Id="ONxeG0qSEt7PTSsLgedR0R" Bounds="17,446,32,31" ShowValueBox="true" isIOBox="true" Value="1.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -732,7 +723,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="KTNFk4VykKPNJQroyvF1A3" Bounds="17,628,32,31" ShowValueBox="true" isIOBox="true" Value="2.">
+          <Pad Id="KTNFk4VykKPNJQroyvF1A3" Bounds="17,553,32,31" ShowValueBox="true" isIOBox="true" Value="2.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -815,7 +806,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="QZTuZiutK8YMUPpZ0LxaHe" Bounds="17,720,32,31" ShowValueBox="true" isIOBox="true" Value="3.">
+          <Pad Id="QZTuZiutK8YMUPpZ0LxaHe" Bounds="17,645,32,31" ShowValueBox="true" isIOBox="true" Value="3.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -824,7 +815,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="JF6sv6Pag2RPT5qHP7CFyJ" Bounds="17,977,32,31" ShowValueBox="true" isIOBox="true" Value="4.">
+          <Pad Id="JF6sv6Pag2RPT5qHP7CFyJ" Bounds="17,902,32,31" ShowValueBox="true" isIOBox="true" Value="4.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -833,7 +824,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Oh0dQHLUDCULD8KKLZLt07" Bounds="17,1012,32,31" ShowValueBox="true" isIOBox="true" Value="5.">
+          <Pad Id="Oh0dQHLUDCULD8KKLZLt07" Bounds="17,937,32,31" ShowValueBox="true" isIOBox="true" Value="5.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -842,7 +833,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="A5KXkTGfH0HPhWheHHvDPy" Bounds="17,1070,32,31" ShowValueBox="true" isIOBox="true" Value="6.">
+          <Pad Id="A5KXkTGfH0HPhWheHHvDPy" Bounds="17,995,32,31" ShowValueBox="true" isIOBox="true" Value="6.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -851,7 +842,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="SjERwiBvcEELoEW9yRTKGI" Bounds="59,72,372,135" ShowValueBox="true" isIOBox="true" Value="This example is talking to the ADXL345 Accelerometer via a Microcontroller Board loaded with the Firmata firmware.&#xD;&#xA;&#xD;&#xA;By using the I2C protocol one can Write to the device to configure it and then Read from it. Each device has:&#xD;&#xA;- an address,&#xD;&#xA;- several registers to write to / read from.">
+          <Pad Id="SjERwiBvcEELoEW9yRTKGI" Bounds="55,72,372,135" ShowValueBox="true" isIOBox="true" Value="This example is talking to the ADXL345 Accelerometer via a Microcontroller Board loaded with the Firmata firmware.&#xD;&#xA;&#xD;&#xA;By using the I2C protocol one can Write to the device to configure it and then Read from it. Each device has:&#xD;&#xA;- an address&#xD;&#xA;- several registers to write to / read from">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -860,7 +851,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="NUO8JM9iR32L5Yv0oBUOqT" Bounds="59,216,529,119" ShowValueBox="true" isIOBox="true" Value="ADXL345 &amp; Arduino Hookup Guide:&#xD;&#xA;https://cdn.sparkfun.com/assets/learn_tutorials/5/4/8/ADXL345Fix.png&#xD;&#xA;Note, resistors are very important for i2c communication.&#xD;&#xA;&#xD;&#xA;Datasheet of the ADXL345 Sensor:&#xD;&#xA;http://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf">
+          <Pad Id="NUO8JM9iR32L5Yv0oBUOqT" Bounds="55,216,333,19" ShowValueBox="true" isIOBox="true" Value="ADXL345 &amp; Arduino Hookup Guide:&#xD;&#xA;&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -967,6 +958,33 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
+          <Pad Id="Cw87r2WmTeOLJ5shhF5fIb" Bounds="55,312,350,19" ShowValueBox="true" isIOBox="true" Value="http://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RBQvyaICDlRLFQM1mhIsS3" Bounds="55,234,347,19" ShowValueBox="true" isIOBox="true" Value="https://cdn.sparkfun.com/assets/learn_tutorials/5/4/8/ADXL345Fix.png">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NMPZ1oaklSQNF7hh9Vdv4f" Bounds="55,257,346,58" ShowValueBox="true" isIOBox="true" Value="Note, resistors are very important for i2c communication.&#xD;&#xA;&#xD;&#xA;Datasheet of the ADXL345 Sensor:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="ScGb1anQliBQEuzymRusro" Name="Create" />
         <Patch Id="PcT2WE30PNbObdDlM2ItuX" Name="Update" />
@@ -1017,7 +1035,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Re87IvrtrPNNV8ykxrCywS" Location="VL.Skia" Version="2019.2.0-0342-g6bc9b61985" />
-  <NugetDependency Id="I8fCdivVlzZQHxgA4vtDii" Location="VL.CoreLib" Version="2019.2.0-0342-g6bc9b61985" />
+  <NugetDependency Id="Re87IvrtrPNNV8ykxrCywS" Location="VL.Skia" Version="2024.6.7-0236-g33a4a9999e" />
+  <NugetDependency Id="I8fCdivVlzZQHxgA4vtDii" Location="VL.CoreLib" Version="2024.6.7-0236-g33a4a9999e" />
   <NugetDependency Id="N9gnbd3BYHqLw7mnX5U5lK" Location="VL.IO.Firmata" Version="1.0.0" />
 </Document>
