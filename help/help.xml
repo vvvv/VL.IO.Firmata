@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Pack>
+	<VLDocument link="Explanation An Overview.vl" tags="arduino, lilypad, teensy, particle.io, atmel, arm, microchip, nordic" />
+	<VLDocument link="HowTo Analog Read-Write.vl" tags="arduino" />
+	<VLDocument link="HowTo Digital Read-Write.vl" tags="arduino" />
+	<VLDocument link="HowTo I2C.vl" tags="arduino" />
+	<VLDocument link="HowTo Servo.vl" tags="arduino" />
+</Pack>
