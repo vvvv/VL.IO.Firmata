@@ -529,7 +529,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="IWhfkdZOksJPb3Ukkq3db5" Bounds="82,73,172,41" ShowValueBox="true" isIOBox="true" Value="VL.Firmata">
+          <Pad Id="IWhfkdZOksJPb3Ukkq3db5" Bounds="82,73,199,41" ShowValueBox="true" isIOBox="true" Value="VL.IO.Firmata">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
