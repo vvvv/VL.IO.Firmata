@@ -1,5 +1,5 @@
 # VL.IO.Firmata
-Provides support for the [Firmata protocol](https://github.com/firmata/protocol) to easily read data from and write to pins of e.g. [Arduino](https://www.arduino.cc) boards.
+Provides support for the [Firmata protocol](https://github.com/firmata/protocol) to easily read data from and write to pins of e.g. [Arduino](https://www.arduino.cc) boards. For an introduction, watch the vvvvTv episode: [Servos & Sensors with Arduino](https://youtube.com/live/uvLNZsStve8?feature=share).
 
 For use with vvvv, the visual live-programming environment for .NET: http://visualprogramming.net
 
