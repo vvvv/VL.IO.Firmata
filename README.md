@@ -1,7 +1,9 @@
 # VL.IO.Firmata
-Provides support for the [Firmata protocol](https://github.com/firmata/protocol) to easily read data from and write to pins of e.g. [Arduino](https://www.arduino.cc) boards. For an introduction, watch the vvvvTv episode: [Servos & Sensors with Arduino](https://youtube.com/live/uvLNZsStve8?feature=share).
+Provides support for the [Firmata protocol](https://github.com/firmata/protocol) to easily read data from and write to pins of e.g. [Arduino](https://www.arduino.cc) boards. 
 
-For use with vvvv, the visual live-programming environment for .NET: http://visualprogramming.net
+For an introduction, watch the vvvvTv episode: 📺 [Servos & Sensors with Arduino](https://youtube.com/live/uvLNZsStve8).
+
+For use with vvvv, the visual live-programming environment for .NET: http://vvvv.org
 
 ## Getting started
 - Upload the "StandardFirmata" firmware to your board using e.g. the [Arduino IDE](https://www.arduino.cc/en/software) 
